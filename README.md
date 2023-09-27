@@ -1,56 +1,83 @@
-# Exercice : Création d'une mini-galerie d'art avec Bootstrap
+# Exercice : Carte de produit Bootstrap
 
-**Objectif :** Utilisez uniquement Bootstrap pour créer une galerie d'art numérique responsive et visuellement attrayante.
+L'objectif de cet exercice est de créer une mise en page de carte pour un produit en utilisant le framework Bootstrap. Cette carte contiendra une image, un titre, une description et des composants Bootstrap pour l'embellir.
 
-## Étapes :
+## Étape 1 : Mise en page basique
 
-### 1. Préparation et structure en HTML
+1. **Initialisation** :
+    - Créez une nouvelle page HTML.
+    - Intégrez les liens CSS et JS de Bootstrap dans l'en-tête.
 
-- **Document et Bootstrap** :
-  - Créez un nouveau fichier HTML appelé `galerie-bootstrap.html`.
-  - Intégrez Bootstrap à votre projet en utilisant le CDN.
-  
-- **Éléments de base avec Bootstrap** :
-  - Utilisez la classe `.display-4` pour le titre principal de votre galerie.
-  - Pour le conteneur principal de votre galerie, utilisez la classe `.container-fluid`.
+2. **Ajout du conteneur** :
+    Englobez votre contenu dans un conteneur Bootstrap :
+    ```
+    <div class="container">
+        <!-- Votre grille ici -->
+    </div>
+    ```
 
-### 2. Collection d'œuvres avec Bootstrap
+3. **Mise en place de la grille** :
+    - À l'intérieur du `container`, créez une `row` (ligne).
+    - Ajoutez deux `col` (colonnes) : une pour l'image, une pour le titre et la description.
+    ```
+    <div class="row">
+        <div class="col-md-4">Image du produit</div>
+        <div class="col-md-8">Détails du produit</div>
+    </div>
+    ```
 
-- **Cartes d'œuvres** :
-  - Utilisez le composant `Card` de Bootstrap pour chaque œuvre. 
-  - Dans ces cartes, ajoutez un titre avec la classe `.card-title` et une description avec la classe `.card-text`.
-  
-- **Grille de mise en page** :
-  - Utilisez les classes `.row` et `.col-*` pour organiser les cartes de manière responsive. Par exemple, `.col-md-4` pour avoir trois colonnes sur un écran de taille moyenne.
+4. **Ajout de contenu** :
+    - Dans la `col-md-4`, ajoutez une image représentant le produit.
+    - Dans la `col-md-8`, ajoutez un titre pour le nom du produit et un paragraphe pour sa description.
 
-### 3. Navigation avec Bootstrap
+5. **Style** :
+    Utilisez les classes utilitaires de Bootstrap pour ajouter des marges, des paddings ou styliser le titre et le paragraphe.
 
-- **Barre de navigation** :
-  - Utilisez le composant `Navbar` de Bootstrap avec les classes `.navbar`, `.navbar-expand-lg`, et `.navbar-light` pour créer une barre de navigation claire et responsive.
-  - Elle contiendra les liens suivants :
-    - Un logo représentant la galerie
-    - Oeuvres d'art : Renvoyant à la page principale
-    - Contact : Renvoyant vers un formulaire de contact (ne doit pas être implémentée)
-    - Une zone permettant de faire une recherche sur le oeuvre (ne doit pas être implémentée)
-  
-- **Liens de Navigation** :
-  - Utilisez le composant `Nav` de Bootstrap avec les classes `.nav` et `.nav-item` pour les liens de navigation individuels.
+6. **Testez votre mise en page** :
+    Ouvrez votre page dans un navigateur pour s'assurer que la mise en page est correcte.
 
-### 4. Stylisation et espacement avec Bootstrap
+## Étape 2 : Intégration des composants Bootstrap
 
-- **Stylisation générale** :
-  - Utilisez les classes `.bg-light` ou `.bg-dark` pour changer l'arrière-plan de la galerie ou des composants individuels.
-  
-- **Stylisation des cartes** :
-  - Utilisez les classes d'utilité comme `.mt-*`, `.mb-*`, `.ml-*`, et `.mr-*` pour gérer les marges autour des cartes.
-  - Utilisez les classes `.text-center`, `.text-left`, ou `.text-right` pour aligner le texte dans les cartes.
-  
-- **Stylisation de la barre de navigation** :
-  - Utilisez les classes `.navbar-light` ou `.navbar-dark` pour le style de votre barre de navigation.
+1. **Carte Bootstrap** :
+    Transformez votre mise en page en composant `card` de Bootstrap.
+    ```
+    <div class="card">
+        <img src="path_to_image.jpg" class="card-img-top" alt="Nom du produit">
+        <div class="card-body">
+            <h5 class="card-title">Nom du produit</h5>
+            <p class="card-text">Description du produit.</p>
+        </div>
+    </div>
+    ```
 
-## Conseils :
+2. **Boutons** :
+    Ajoutez un bouton sous la description pour simuler une action, comme "Ajouter au panier".
+    ```
+    <button class="btn btn-primary">Ajouter au panier</button>
+    ```
 
-- N'utilisez pas de CSS supplémentaire pour cet exercice; tout doit être réalisé avec les classes Bootstrap. Si, dans des projets futurs, vous avez besoin d'ajouter du CSS personnalisé, assurez-vous de le faire dans un fichier CSS séparé, sans modifier le fichier Bootstrap original.
-- Parcourez la documentation de Bootstrap pour vous familiariser avec les différentes classes et composants disponibles.
-- Assurez-vous de tester votre galerie sur différents appareils et navigateurs pour confirmer sa responsivité.
-- [Avantages et Inconvénients de l'Utilisation de CSS Pur et de Bootstrap](pro_cons.md)
+3. **Badges** :
+    Indiquez que le produit est en solde ou nouveau en utilisant les badges de Bootstrap.
+    ```
+    <h5 class="card-title">Nom du produit <span class="badge badge-success">Nouveau</span></h5>
+    ```
+
+4. **Liste de groupes** :
+    Si le produit a des caractéristiques spécifiques, listez-les en utilisant le composant "list group".
+    ```
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Caractéristique 1</li>
+        <li class="list-group-item">Caractéristique 2</li>
+    </ul>
+    ```
+
+5. **Alertes** :
+    Ajoutez une alerte sous le bouton pour fournir des informations supplémentaires.
+    ```
+    <div class="alert alert-info" role="alert">
+        Livraison gratuite pour cet article !
+    </div>
+    ```
+
+6. **Testez votre mise en page** :
+    Ouvrez votre page dans un navigateur pour vérifier que tout fonctionne correctement.
