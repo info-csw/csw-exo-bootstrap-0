@@ -11,7 +11,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 
 2. **Ajout du conteneur** :
     Englobez votre contenu dans un conteneur Bootstrap :
-    ```
+    ```html
     <div class="container">
         <!-- Votre grille ici -->
     </div>
@@ -20,7 +20,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 3. **Mise en place de la grille** :
     - À l'intérieur du `container`, créez une `row` (ligne).
     - Ajoutez deux `col` (colonnes) : une pour l'image, une pour le titre et la description.
-    ```
+    ```html
     <div class="row">
         <div class="col-md-4">Image du produit</div>
         <div class="col-md-8">Détails du produit</div>
@@ -41,7 +41,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 
 1. **Carte Bootstrap** :
     Transformez votre mise en page en composant `card` de Bootstrap.
-    ```
+    ```html
     <div class="card">
         <img src="path_to_image.jpg" class="card-img-top" alt="Nom du produit">
         <div class="card-body">
@@ -53,19 +53,19 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 
 2. **Boutons** :
     Ajoutez un bouton sous la description pour simuler une action, comme "Ajouter au panier".
-    ```
+    ```html
     <button class="btn btn-primary">Ajouter au panier</button>
     ```
 
 3. **Badges** :
     Indiquez que le produit est en solde ou nouveau en utilisant les badges de Bootstrap.
-    ```
+    ```html
     <h5 class="card-title">Nom du produit <span class="badge badge-success">Nouveau</span></h5>
     ```
 
 4. **Liste de groupes** :
     Si le produit a des caractéristiques spécifiques, listez-les en utilisant le composant "list group".
-    ```
+    ```html
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Caractéristique 1</li>
         <li class="list-group-item">Caractéristique 2</li>
@@ -74,7 +74,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 
 5. **Alertes** :
     Ajoutez une alerte sous le bouton pour fournir des informations supplémentaires.
-    ```
+    ```html
     <div class="alert alert-info" role="alert">
         Livraison gratuite pour cet article !
     </div>
