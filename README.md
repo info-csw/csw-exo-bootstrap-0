@@ -6,7 +6,8 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 
 1. **Initialisation** :
     - Créez une nouvelle page HTML.
-    - Intégrez les liens CSS et JS de Bootstrap dans l'en-tête.
+    - [Télécharger Bootstrap](https://github.com/twbs/bootstrap/releases/download/v5.3.2/bootstrap-5.3.2-dist.zip)
+    - Intégrez les liens CSS Bootstrap dans l'en-tête (bootstrap.min.css est suffisant).
 
 2. **Ajout du conteneur** :
     Englobez votre contenu dans un conteneur Bootstrap :
