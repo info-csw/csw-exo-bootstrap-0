@@ -32,7 +32,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
     - Dans la `col-md-8`, ajoutez un titre pour le nom du produit et un paragraphe pour sa description.
 
 5. **Style** :
-    Utilisez les classes utilitaires de Bootstrap pour ajouter des marges, des paddings ou styliser le titre et le paragraphe.
+    Utilisez les classes utilitaires de Bootstrap pour ajouter des marges, des paddings ou styliser le titre et le paragraphe (couleur de texte, couleur de fond, bordure,...).
 
 6. **Testez votre mise en page** :
     Ouvrez votre page dans un navigateur pour s'assurer que la mise en page est correcte.
