@@ -60,7 +60,7 @@ L'objectif de cet exercice est de créer une mise en page de carte pour un produ
 3. **Badges** :
     Indiquez que le produit est en solde ou nouveau en utilisant les badges de Bootstrap.
     ```html
-    <h5 class="card-title">Nom du produit <span class="badge badge-success">Nouveau</span></h5>
+    <h5 class="card-title">Nom du produit <span class="bg bg-success">Nouveau</span></h5>
     ```
 
 4. **Liste de groupes** :
